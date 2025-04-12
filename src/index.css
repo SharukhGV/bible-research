@@ -1,0 +1,127 @@
+
+/* Load Fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Cinzel+Decorative:wght@700&family=Open+Sans:wght@400;700&display=swap');
+/* styles.css */
+:root {
+  --parchment: #f5f2e5;
+  --ink: #3c2f2f;
+  --gold: #c5a645;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --font-serif: 'EB Garamond', serif;
+  --font-sans: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('parchment-texture.jpg') repeat;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Scroll Container */
+.scrolls-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Individual Scroll Card */
+.scroll-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow);
+  padding: 1.5rem;
+  border-left: 5px solid var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.scroll-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Scroll Header */
+.scroll-header {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--gold);
+}
+
+.scroll-title {
+  font-size: 1.8rem;
+  color: var(--ink);
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+}
+
+/* Verse List */
+.verse-list {
+  list-style: none;
+  counter-reset: verse-counter;
+}
+
+.verse-item {
+  padding: 1rem 0;
+  border-bottom: 1px dashed #ddd;
+  counter-increment: verse-counter;
+}
+
+.verse-item:last-child {
+  border-bottom: none;
+}
+
+.verse-reference {
+  display: block;
+  font-weight: bold;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+}
+
+.verse-reference::before {
+  content: "Verse " counter(verse-counter) ": ";
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Hebrew Text */
+.hebrew-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: right;
+  direction: rtl;
+  padding: 1rem;
+  background: rgba(245, 242, 229, 0.5);
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+/* English Translation */
+.english-translation {
+  font-style: italic;
+  color: #555;
+  padding-left: 1rem;
+  border-left: 3px solid var(--gold);
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scrolls-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .hebrew-text {
+    font-size: 1.2rem;
+  }
+}
