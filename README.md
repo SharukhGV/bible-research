@@ -1,12 +1,15 @@
-# React + Vite
+# Bible Research
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is the English New Revised Standard Version of the Bible.
 
-Currently, two official plugins are available:
+You can search for exact phrases or mixed words within verses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Also is a Go-To dropdown menu of the Book, Chapter, and verse
 
-## Expanding the ESLint configuration
+## Future Implementations
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Currently in the process of providing a translated Hebrew into English version of the Dead Sea Scrolls so that everyone can access and learn about them. 
+Features will include Hebrew, English, Scroll, and Verse Number
+
+
+![A Snapshot of the app](snap.png)
