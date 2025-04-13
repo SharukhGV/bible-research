@@ -1,6 +1,8 @@
 body{
 
-  background: url("./flowers.png");
-  background-repeat: repeat;
+  /* background: url("./flowers.png");
+  background-repeat: repeat; */
+  
+  background-color: rgb(10, 43, 10);
 
 }
