@@ -25,16 +25,16 @@ import iEnoch from './books/1-enoch.json';
 // import testamentOfMoses from './books/assumption-of-moses.json';
 // import prayerOfAzariah from './books/azar.json';
 // import balaamInscription from './books/balaam-inscription.json';
-import belAndTheDragon from './books/bel-and-the-dragon.json';
+// import belAndTheDragon from './books/bel-and-the-dragon.json';
 import bookOfGiants from './books/book-of-giants.json';
 // import jasher from './books/book-of-jasher.json';
 import jubilees from './books/book-of-jubilees.json';
 // import judith from './books/book-of-judith.json';
 // import bookOfNathanTheProphet from './books/book-of-nathan-the-prophet.json';
-import sirach from './books/book-of-sirach.json';
-import tobit from './books/book-of-tobit.json';
+// import sirach from './books/book-of-sirach.json';
+// import tobit from './books/book-of-tobit.json';
 // import generalEpistleOfBarnabas from './books/epistle-of-barnabas.json';
-import fivePsalmsOfDavid from './books/five-psalms-of-david.json';
+// import fivePsalmsOfDavid from './books/five-psalms-of-david.json';
 // import gadTheSeer from './books/gad-the-seer.json';
 import genesisApocryphon from './books/genesis-apocryphon.json';
 // import gospelOfNicodemus from './books/gospel-of-nicodemus.json';
@@ -46,9 +46,9 @@ import genesisApocryphon from './books/genesis-apocryphon.json';
 // import livesOfTheProphets from './books/lives-of-the-prophets.json';
 // import odesOfSolomon from './books/odes-of-solomon.json';
 // import prayerOfManasseh from './books/prayer-of-manasseh.json';
-import psalmsOfSolomon from './books/psalms-of-solomon.json';
+// import psalmsOfSolomon from './books/psalms-of-solomon.json';
 import songsOfTheSabbathSacrifice from './books/songs-of-the-sabbath-sacrifice.json';
-import susanna from './books/susanna.json';
+// import susanna from './books/susanna.json';
 // import testamentOfAbraham from './books/testament-of-abraham.json';
 // import testamentOfAsher from './books/testament-of-asher.json';
 // import testamentOfBenjamin from './books/testament-of-benjamin.json';
@@ -61,14 +61,14 @@ import susanna from './books/susanna.json';
 // import testamentOfJoseph from './books/testament-of-joseph.json';
 // import testamentOfJudah from './books/testament-of-judah.json';
 // import testamentOfKohath from './books/testament-of-kohath.json';
-import testamentOfLevi from './books/testament-of-levi.json';
-import testamentOfNaphtali from './books/testament-of-naphtali.json';
+// import testamentOfLevi from './books/testament-of-levi.json';
+// import testamentOfNaphtali from './books/testament-of-naphtali.json';
 // import testamentOfReuben from './books/testament-of-reuben.json';
 // import testamentOfSimeon from './books/testament-of-simeon.json';
 // import testamentOfSolomon from './books/testament-of-solomon.json';
 // import testamentOfZebulun from './books/testament-of-zebulun.json';
 import visionsOfAmram from './books/visions-of-amram.json';
-import wisdomOfAhikar from './books/wisdom-of-ahikar.json';
+// import wisdomOfAhikar from './books/wisdom-of-ahikar.json';
 // import wisdomOfSolomon from './books/wisdom-of-solomon.json';
 
 import "./deadseascrolls.css"
@@ -97,16 +97,16 @@ const bookFilenames = {
   // "testament-of-moses": testamentOfMoses,
   // "prayer-of-azariah": prayerOfAzariah,
   // "balaam-inscription": balaamInscription,
-  "bel-and-the-dragon": belAndTheDragon,
+  // "bel-and-the-dragon": belAndTheDragon,
   "book-of-giants": bookOfGiants,
   // "jasher": jasher,
   "jubilees": jubilees,
   // "judith": judith,
   // "book-of-nathan-the-prophet": bookOfNathanTheProphet,
-  "sirach": sirach,
-  "tobit": tobit,
+  // "sirach": sirach,
+  // "tobit": tobit,
   // "general-epistle-of-barnabas": generalEpistleOfBarnabas,
-  "five-psalms-of-david": fivePsalmsOfDavid,
+  // "five-psalms-of-david": fivePsalmsOfDavid,
   // "gad-the-seer": gadTheSeer,
   "genesis-apocryphon": genesisApocryphon,
   // "gospel-of-nicodemus": gospelOfNicodemus,
@@ -140,7 +140,7 @@ const bookFilenames = {
   // "testament-of-solomon": testamentOfSolomon,
   // "testament-of-zebulun": testamentOfZebulun,
   "visions-of-amram": visionsOfAmram,
-  "wisdom-of-ahikar": wisdomOfAhikar,
+  // "wisdom-of-ahikar": wisdomOfAhikar,
   // "wisdom-of-solomon": wisdomOfSolomon
 };
 
