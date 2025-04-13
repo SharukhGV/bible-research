@@ -139,3 +139,97 @@
        border-radius: 10px;
   }
   
+  /* Existing CSS remains unchanged until the end */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .bible-container {
+      height: auto;
+      min-height: 100vh;
+    }
+  
+    .fixed-header {
+      padding: 10px;
+      gap: 10px;
+      position: relative;
+      box-shadow: none;
+    }
+  
+    .search-controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-input {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .search-type {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .navigation-controls {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .book-select, 
+    .chapter-select, 
+    .verse-select {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .go-button {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .content-container {
+      position: static;
+      padding: 15px;
+      top: auto;
+    }
+  
+    .content-wrapper {
+      padding: 20px;
+    }
+  
+    .book-section {
+      padding: 15px;
+    }
+  
+    .verse-text,
+    .verse-result {
+      font-size: 18px;
+      padding: 12px;
+      line-height: 1.6;
+    }
+  
+    .book-title {
+      font-size: 1.5em;
+    }
+  
+    .chapter-title {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .search-button {
+      width: 100%;
+    }
+  
+    .verse-text,
+    .verse-result {
+      font-size: 16px;
+    }
+  
+    .content-wrapper {
+      padding: 10px;
+    }
+  }
+  
