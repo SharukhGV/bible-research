@@ -13,3 +13,6 @@ Features will include Hebrew, English, Scroll, and Verse Number
 
 
 ![A Snapshot of the app](snap.png)
+
+Sources:
+https://github.com/scrollmapper/bible_databases_deuterocanonical/tree/master?tab=readme-ov-file
