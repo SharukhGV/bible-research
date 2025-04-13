@@ -1,0 +1,94 @@
+:root {
+    --green-dark: #1e392a;
+    --green: #2e7d32;
+    --green-light: #a5d6a7;
+    --green-lighter: #d0f0c0;
+    --text-light: #f0fff0;
+    --font: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--green-lighter);
+    color: var(--green-dark);
+  }
+  
+  .container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 64, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    font-size: 1rem;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--green);
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #f9fff9;
+  }
+  
+  strong {
+    color: var(--green-dark);
+    font-size: 1.1rem;
+  }
+  
+  .verse {
+    background-color: var(--green-lighter);
+    padding: 1rem;
+    border-left: 4px solid var(--green);
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .verse:hover {
+    background-color: #e8ffe8;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    select,
+    input[type="text"] {
+      font-size: 0.95rem;
+      padding: 0.5rem;
+    }
+  
+    .verse {
+      font-size: 0.95rem;
+    }
+  }
+  
