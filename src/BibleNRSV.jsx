@@ -33,20 +33,31 @@ function BibleNRSV() {
   }, [selectedChapter, selectedBook]);
 
   const scrollToVerse = (verseKey) => {
-    const verseElement = verseRefs.current[verseKey];
-    if (verseElement) {
-      const topOffset = verseElement.offsetTop - 180; // Adjusted for fixed headers
-      containerRef.current.scrollTo({
-        top: topOffset,
-        behavior: 'smooth'
-      });
+    setTimeout(() => { // Add slight delay for DOM stability
+      const verseElement = verseRefs.current[verseKey];
+      const header = document.querySelector('.fixed-header');
       
-      verseElement.style.backgroundColor = '#fff3cd';
-      setTimeout(() => {
-        verseElement.style.backgroundColor = 'transparent';
-      }, 2000);
-    }
+      if (verseElement && containerRef.current && header) {
+        const headerHeight = header.offsetHeight + 20; // Add safety margin
+        const containerTop = containerRef.current.getBoundingClientRect().top;
+        const verseTop = verseElement.getBoundingClientRect().top;
+        const scrollPosition = verseTop - containerTop - headerHeight + containerRef.current.scrollTop;
+  
+        containerRef.current.scrollTo({
+          top: scrollPosition,
+          behavior: 'smooth'
+        });
+  
+        // Highlight logic
+        verseElement.style.backgroundColor = '#fff3cd';
+        setTimeout(() => {
+          verseElement.style.backgroundColor = 'transparent';
+        }, 2000);
+      }
+    }, 50); // Short delay to ensure DOM updates
   };
+  
+  
 
   const handleSearch = () => {
     if (!searchTerm.trim()) return setSearchResults(null);
