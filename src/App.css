@@ -63,6 +63,34 @@ body{
 }
 
 .home-section p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   line-height: 1.6;
 }
+
+
+.font-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+
+.font-controls button {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2f4f4f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.font-controls button:hover {
+  background-color: #3f5f5f;
+}
+
+
+/* p {
+  font-size: 35px;
+} */
